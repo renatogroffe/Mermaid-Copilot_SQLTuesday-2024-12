@@ -53,3 +53,75 @@ erDiagram
     }
     Empresas ||--o{ Contatos: "FK_Contato_Empresa"
 ```
+
+---
+
+## Gerando um  DER a partir de uma query
+
+Pergunta ao Mermaid:
+
+```text
+Gere um diagrama de entidade-relacionamento do Mermaid para a consulta a seguir:
+```
+
+```sql
+SELECT Produtos.IdProduto, Produtos.Nome AS NomeProduto, Fornecedores.IdFornecedor, Fornecedores.Nome AS NomeFornecedor FROM Produtos INNER JOIN Fornecedores ON Produtos.IdFornecedor = Fornecedores.IdFornecedor;
+```
+
+Resultado:
+
+```mermaid
+erDiagram
+    Produtos {
+        int IdProduto PK
+        varchar NomeProduto
+        int IdFornecedor FK
+    }
+    Fornecedores {
+        int IdFornecedor PK
+        varchar NomeFornecedor
+    }
+    Produtos }o--|| Fornecedores: "IdFornecedor"
+```
+
+## Fluxograma
+
+Pergunta do Copilot:
+
+```text
+Gere um fluxograma que represente um processo de ETL utilizando Azure Storage, arquivos no formato texto, processamento com o Azure Data Factory e gravação numa base do Azure SQL. Será um funcionário da área financeira que vai aplicação fará com que o arquivo seja postado em um blob do Azure Storage...
+```
+
+Resultado:
+
+```mermaid
+flowchart TD
+    A[Funcionário da área financeira] -->|Posta arquivo texto| B[Azure Blob Storage]
+    B --> C[Azure Data Factory]
+    C -->|Processa dados| D[Azure SQL Database]
+    D --> E[Dados gravados na base do Azure SQL]
+```
+
+## Diagrama de Sequência
+
+Pergunta ao Copilot:
+
+```text
+Você poderia converter este último diagrama para o formato de um diagrama de sequência?
+```
+
+Resultado:
+
+```mermaid
+sequenceDiagram
+    actor Funcionario as Funcionário da área financeira
+    participant Blob as Azure Blob Storage
+    participant DataFactory as Azure Data Factory
+    participant SQLDatabase as Azure SQL Database
+
+    Funcionario->>Blob: Posta arquivo texto
+    Blob->>DataFactory: Notifica novo arquivo
+    DataFactory->>Blob: Lê arquivo texto
+    DataFactory->>SQLDatabase: Processa e grava dados
+    SQLDatabase->>Funcionario: Confirmação de dados gravados
+```

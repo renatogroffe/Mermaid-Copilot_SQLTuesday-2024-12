@@ -1,0 +1,14 @@
+erDiagram
+    Empresas {
+        int IdEmpresa PK
+        char CNPJ(14)
+        varchar Nome(100)
+        varchar Cidade(50)
+    }
+    Contatos {
+        int IdContato PK
+        varchar Nome(100)
+        varchar Telefone(20)
+        int IdEmpresa FK
+    }
+    Empresas ||--o{ Contatos: "FK_Contato_Empresa"
