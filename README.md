@@ -3,6 +3,10 @@ Materiais da apresentação "IA + Documentação em Bancos de Dados: utilizando 
 
 ---
 
+Público: 35 pessoas
+
+---
+
 ## Diagrama de Entidade-Relacionamento
 
 Pergunta ao Copilot:
