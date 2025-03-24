@@ -13,7 +13,18 @@ Número de participantes: **35 pessoas**
 
 Evento: **SQLTuesday**
 
+Local: **Microsoft Reactor - Rua Jaceru, 225 - Vila Gertrudes - São Paulo - SP - CEP: 04705-000**
+
+Link do evento: [**Microsoft Reactor**](https://developer.microsoft.com/pt-br/reactor/events/24240/)
+
+Link da transmissão: [**YouTube**](https://www.youtube.com/watch?v=2_vlhxP4U1M)
+
+
+
+
 ---
+
+![Banner de divulgação](img/banner.jpg)
 
 ![Banner de divulgação](img/banner.jpg)
 
