@@ -3,7 +3,19 @@ Materiais da apresentação "IA + Documentação em Bancos de Dados: utilizando 
 
 ---
 
-Público: 35 pessoas
+Título da apresentação: **IA + Documentação em Bancos de Dados: utilizando GitHub Copilot + Mermaid para gerar diagramas**
+
+Data: **17/12/2024 (terça-feira)**
+
+Tecnologias e tópicos abordados: **GitHub Copilot, Mermaid, Visual Studio Code, GitHub, Documentação de Projetos, PostgreSQL, SQL Server, UML, .NET, Entity Framework, Azure Data Factory...**
+
+Número de participantes: **35 pessoas**
+
+Evento: **SQLTuesday**
+
+---
+
+![Banner de divulgação](img/banner.jpg)
 
 ---
 
